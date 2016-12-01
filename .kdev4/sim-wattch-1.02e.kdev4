@@ -1,0 +1,145 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+
+[Launch]
+Launch Configurations=Launch Configuration 3,Launch Configuration 4,Launch Configuration 5,Launch Configuration 6,Launch Configuration 7,Launch Configuration 8
+
+[Launch][Launch Configuration 3]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=trctbit
+Type=Native Application
+
+[Launch][Launch Configuration 3][Data]
+Arguments=-max:inst 100000000 -redir:sim trctbit/out1.txt -fetch:ifqsize 1 -decode:width 1 -issue:width 1 -issue:inorder true -issue:wrongpath false -commit:width 1 -bpred tbit -fetch:mplat 1 ../automotive/basicmath/basicmath_small
+Debugger Shell=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+Display Demangle Names=true
+Display Static Members=false
+EnvironmentGroup=default
+Executable=file:///home/jaikrishna/Study/ca/project/sim-wattch-1.02e-final/sim-outorder
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+GDB Path=gdb
+Project Target=
+Remote GDB Config Script=
+Remote GDB Run Script=
+Remote GDB Shell Script=
+Start With=ApplicationOutput
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[Launch][Launch Configuration 4]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=nottakenonly
+Type=Native Application
+
+[Launch][Launch Configuration 4][Data]
+Arguments=-max:inst 100000000 -redir:sim nottakenonly/out1.txt -fetch:ifqsize 1 -decode:width 1 -issue:width 1 -issue:inorder true -issue:wrongpath false -commit:width 1 -bpred nottaken -cache:trc none -fetch:mplat 1 ../automotive/basimath/basicmath_small
+Debugger Shell=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+Display Demangle Names=true
+Display Static Members=false
+EnvironmentGroup=default
+Executable=file:///home/jaikrishna/Study/ca/project/sim-wattch-1.02e-final/sim-outorder
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+GDB Path=gdb
+Project Target=
+Remote GDB Config Script=
+Remote GDB Run Script=
+Remote GDB Shell Script=
+Start With=ApplicationOutput
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[Launch][Launch Configuration 5]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=tbitonly
+Type=Native Application
+
+[Launch][Launch Configuration 5][Data]
+Arguments=-max:inst 100000000 -redir:sim tbitonly/out1.txt -fetch:ifqsize 1 -decode:width 1 -issue:width 1 -issue:inorder true -issue:wrongpath false -commit:width 1 -bpred tbit -cache:trc none -fetch:mplat 1 ../automotive/basicmath/basicmath_small\s
+Debugger Shell=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+Display Demangle Names=true
+Display Static Members=false
+EnvironmentGroup=default
+Executable=file:///home/jaikrishna/Study/ca/project/sim-wattch-1.02e-final/sim-outorder
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+GDB Path=gdb
+Project Target=
+Remote GDB Config Script=
+Remote GDB Run Script=
+Remote GDB Shell Script=
+Start With=ApplicationOutput
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[Launch][Launch Configuration 6]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=trcbimod
+Type=Native Application
+
+[Launch][Launch Configuration 6][Data]
+Arguments=-max:inst 100000000 -redir:sim trcbimod/out1.txt -fetch:ifqsize 1 -decode:width 1 -issue:width 1 -issue:inorder true -issue:wrongpath false -commit:width 1 -bpred bimod -fetch:mplat 1 ../automotive/basicmath/basicmath_small\s
+Debugger Shell=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+Display Demangle Names=true
+Display Static Members=false
+EnvironmentGroup=default
+Executable=file:///home/jaikrishna/Study/ca/project/sim-wattch-1.02e-final/sim-outorder
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+GDB Path=gdb
+Project Target=
+Remote GDB Config Script=
+Remote GDB Run Script=
+Remote GDB Shell Script=
+Start With=ApplicationOutput
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[Launch][Launch Configuration 7]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=trcnottaken
+Type=Native Application
+
+[Launch][Launch Configuration 7][Data]
+Arguments=-max:inst 100000000 -redir:sim trcnottaken/out1.txt -fetch:ifqsize 1 -decode:width 1 -issue:width 1 -issue:inorder true -issue:wrongpath false -commit:width 1 -bpred nottaken -fetch:mplat 1 ../automotive/matmult50
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=default
+Executable=file:///home/jaikrishna/Study/ca/project/sim-wattch-1.02e-final/sim-outorder
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[Launch][Launch Configuration 8]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=trcperfect
+Type=Native Application
+
+[Launch][Launch Configuration 8][Data]
+Arguments=-max:inst 100000000 -redir:sim trcperfect/out1.txt -fetch:ifqsize 1 -decode:width 1 -issue:width 1 -issue:inorder true -issue:wrongpath false -commit:width 1 -bpred perfect -fetch:mplat 1 ../automotive/basicmath/basicmath_small\s
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=default
+Executable=file:///home/jaikrishna/Study/ca/project/sim-wattch-1.02e-final/sim-outorder
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=
+Use External Terminal=false
+Working Directory=
+isExecutable=true
